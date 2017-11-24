@@ -35,7 +35,8 @@ export default function fetch(options) {
       //设置请求时的header
       headers: {
         'Github-url': 'https://github.com/zzmhot/vue-admin',
-        'X-Powered-By': 'zzmhot'
+        'X-Powered-By': 'zzmhot',
+        'Access-Control-Allow-Origin': '*'
       }
     })
     //请求处理
