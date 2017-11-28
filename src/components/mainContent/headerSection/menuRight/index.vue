@@ -30,26 +30,25 @@
       </el-dropdown>
     </div>
     <div>
-      <el-dialog title="get_user_info.user.name" :visible.sync="dialogFormVisible" width="30%"
+      <el-dialog title="个人信息" :visible.sync="dialogFormVisible" width="30%"
          :modal-append-to-body="false">
-        <span v-text="get_user_info.user.name"></span>
         <el-form >
           <el-form-item label="姓名">
-            <el-input v-model="user.name" auto-complete="off"></el-input>
+            <el-input v-model="get_user_info.user.name" auto-complete="off"></el-input>
           </el-form-item>
           <el-form-item label="年龄">
-            <el-input v-model="user.age" auto-complete="off"></el-input>
+            <el-input v-model="get_user_info.user.age" auto-complete="off"></el-input>
           </el-form-item>
           <el-form-item label="头像">
-            <el-input v-model="user.avatar" auto-complete="off"></el-input>
+            <el-input v-model="get_user_info.user.avatar" auto-complete="off"></el-input>
           </el-form-item>
           <el-form-item label="描述">
-            <el-input v-model="user.desc" auto-complete="off"></el-input>
+            <el-input v-model="get_user_info.user.desc" auto-complete="off"></el-input>
           </el-form-item>
         </el-form>
         <div slot="footer" class="dialog-footer">
           <el-button @click="dialogFormVisible = false">取 消</el-button>
-          <el-button type="primary" @click="dialogFormVisible = false">确 定</el-button>
+          <el-button type="primary" @click="dialogFormVisible = false">保 存</el-button>
         </div>
       </el-dialog>
     </div>
